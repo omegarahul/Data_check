@@ -14,7 +14,7 @@ def main():
         try:
             if upload_file.name.endswith('.csv'):
                 data = pd.read_csv(upload_file)
-            elif upload_file.name.endswith('.xlsx'):
+            else:
                 data = pd.read_excel(upload_file)
 
             st.sidebar.success("File uploaded successfully")
